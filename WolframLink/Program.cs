@@ -15,9 +15,9 @@ namespace WolframLinkNamespace
 #if WIN
             mlArgs = "-linkmode launch -linkname \"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\12.0\\\\MathKernel.exe\"";
 #elif LINUX
-            mlArgs = "-linkmode launch -linkname \"/opt/Wolfram/WolframEngine/12.1/Executables/MathKernel\"";
+            mlArgs = "-linkmode launch -linkname '/usr/local/Wolfram/WolframEngine/12.2/Executables/MathKernel'";
 #endif
-            
+
             IKernelLink ml = MathLinkFactory.CreateKernelLink(mlArgs);
             ml.WaitAndDiscardAnswer();
 

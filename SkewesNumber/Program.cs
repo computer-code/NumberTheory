@@ -7,6 +7,11 @@ namespace SkewesNumber
     {
         static void Main(string[] args)
         {
+            for (int i = 0; i < 1000000000; i++)
+            {
+                Console.WriteLine(i);
+            }
+            
             WolframLink wolframLink = new WolframLink();
             wolframLink.Evaluate("prime=10^14; primepi:=PrimePi[prime];");
             string skewes = "False";
